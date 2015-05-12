@@ -13,6 +13,13 @@
   <property name="windowTitle">
    <string>汽车销售管理系统</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/u=3066504418,2270399769&amp;fm=23&amp;gp=0.png</normaloff>:/u=3066504418,2270399769&amp;fm=23&amp;gp=0.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
@@ -263,8 +270,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>336</width>
-        <height>294</height>
+        <width>100</width>
+        <height>30</height>
        </rect>
       </property>
       <attribute name="label">
@@ -335,6 +342,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -12,6 +12,11 @@ LoginDialog::LoginDialog(QWidget *parent) :
     setWindowTitle(tr("登录"));
     ui->pwdLineEdit->setFocus();//这条语句和下面这条语句意思是不一样的
     ui->loginBtn->setDefault(true);
+    int i=0;
+    while(i<100000000)//纯属延时
+    {
+        i++;
+    }
 }
 
 LoginDialog::~LoginDialog()

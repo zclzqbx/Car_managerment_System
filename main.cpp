@@ -6,6 +6,9 @@
 #include <QStringList>
 #include <QString>
 #include "logindialog.h"
+#include <QPixmap>
+#include <QSplashScreen>
+#include <QImage>
 
 int main(int argc, char *argv[])
 {
@@ -19,10 +22,19 @@ int main(int argc, char *argv[])
 
     }*/
 
+    //QImage image("9387426_201412590187_2.png");
+    QPixmap pixmap(400,300);
+    pixmap.load("u=3066504418,2270399769&fm=23&gp=0.png");
+
+
+    QSplashScreen splash(pixmap);
+    splash.show();
     if(!createConnection() || !createXml())return 0;
 
     Widget w;
     LoginDialog dlg;
+    dlg.show();
+    splash.finish(&dlg);
     if(dlg.exec()==QDialog::Accepted)
     {
         w.show();

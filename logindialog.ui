@@ -13,10 +13,13 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">image: url(:/1425439466729.jpg);</string>
+  </property>
   <widget class="QLineEdit" name="pwdLineEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>150</x>
      <y>120</y>
      <width>113</width>
      <height>20</height>
@@ -29,7 +32,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>100</x>
      <y>122</y>
      <width>54</width>
      <height>20</height>
@@ -38,6 +41,8 @@
    <property name="font">
     <font>
      <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -56,7 +61,12 @@
    <property name="font">
     <font>
      <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
    </property>
    <property name="text">
     <string>欢迎使用汽车销售管理系统</string>
@@ -65,11 +75,17 @@
   <widget class="QPushButton" name="loginBtn">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>80</x>
      <y>200</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>登录</string>
@@ -78,11 +94,17 @@
   <widget class="QPushButton" name="quitBtn">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>220</x>
      <y>200</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>退出</string>

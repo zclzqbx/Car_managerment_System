@@ -29,3 +29,6 @@ HEADERS  += widget.h \
 FORMS    += widget.ui \
     logindialog.ui \
     pwdchangedialog.ui
+
+RESOURCES += \
+    image.qrc
